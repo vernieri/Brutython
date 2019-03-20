@@ -22,3 +22,16 @@ def conn(url, variavel, line):
 	print(new_url)
 	response = requests.get(new_url)
 	print response.status_code
+
+def leitura(url, variavel, lista):
+	with open(lista) as file:
+		for line in file:
+			#print(url)
+			str(line)
+			#line.rstrip()
+			#print(line)
+			conn(url, variavel, line)
+			sleep(randint(1,5))#Time Out pra tu nao derrubar a app
+
+starter()
+	

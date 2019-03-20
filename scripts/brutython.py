@@ -16,3 +16,9 @@ def starter():
 	variavel = raw_input('Campo que iremos Bruceforciar: ')
 	str(variavel)
 	leitura(url, variavel, lista)
+
+def conn(url, variavel, line):
+	new_url = url.replace(variavel, line.rstrip())
+	print(new_url)
+	response = requests.get(new_url)
+	print response.status_code

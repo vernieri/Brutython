@@ -5,7 +5,7 @@ from random import randint
 
 #path = '/root/Documents/scripts' #Poe o Path de exec
 #lista = 'user_lista.txt' #Poe tua lista
-#url = 'http://www.google.com' #Sua_Url se tu for usar estatico
+#url = 'http://www.google.com' #Sua_Url if is static
 
 def starter():
 	print('Bem-Vindo ao Brutython, Url bruteforce feito em Python por @SeuNick')
